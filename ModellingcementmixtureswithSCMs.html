@@ -180,32 +180,32 @@
 
             <div class="main-content">
                 
-<p class="rvps3"><span class="rvts8"><br/></span></p>
-<p class="rvps3"><span class="rvts8"><br/></span></p>
-<p class="rvps3"><span class="rvts8"><br/></span></p>
-<p class="rvps6"><a name="ReactivityOfSCM"></a><span class="rvts17">Reactivity of SCM</span></p>
-<p class="rvps3"><span class="rvts8"><br/></span></p>
-<p class="rvps3"><span class="rvts8">The reactivity of a SCM &nbsp;is defined as the maximum amount of the SCM that is capable in participating in the chemical reactions &nbsp;– crystalline components generally do not react in cementitious systems (</span><a class="rvts15" href="References.html#GLO2021">Glosser et al., 2021</a><span class="rvts8">). As an alternative to assuming full reactivity of the SCM (e.g. in </span><a class="rvts15" href="Tutorial-Calculatethecementhydr1.html">Tutorial </a><a class="rvts15" href="Tutorial-Calculatethecementhydr1.html">Calculate the cement hydrates assemblages with part of OPC is replaced by GBSF</a><span class="rvts8">), it can be assumed that only part of the SCM is reactive. Following the approaches proposed by </span><a class="rvts15" href="References.html#GLO2021">Glosser et al. (2021)</a><span class="rvts8"> for fly-ash, the alternatives are for the case where the SCM composition is defined in terms of bulk content of oxides:</span></p>
-<p class="rvps3"><span class="rvts8"><br/></span></p>
-<p class="rvps3"><span class="rvts8">•</span><span class="rvts8"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts8">An overall reactivity is defined; each oxide content is multiplied with the reactivity.&nbsp;</span></p>
-<p class="rvps3"><span class="rvts8">•</span><span class="rvts8"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts8">An oxide-specific reactivity&nbsp;</span></p>
-<p class="rvps3"><span class="rvts8"><br/></span></p>
-<p class="rvps3"><span class="rvts8">Methods for obtaining the overall of the oxide-specific reactivity of fly-ash is given in </span><a class="rvts15" href="References.html#GLO2021">Glosser et al. (2021)</a><span class="rvts8">.&nbsp;</span></p>
-<p class="rvps3"><span class="rvts8">For each SCM in the </span><span class="rvts33">ModuleCement_Input_02_Recipe</span><span class="rvts33"> tab</span><span class="rvts8">, the type of reactivity of the SCM is specified via the drop down menu </span><span class="rvts38">SCM</span><span class="rvts33">::Reactivity</span><span class="rvts8"> (</span><span class="rvts39">SCM</span><span class="rvts8"> is e.g. GBFS, FA, …) - &nbsp;(see Figure below):</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps6"><a name="ReactivityOfSCM"></a><span class="rvts18">Reactivity of SCM</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The reactivity of a SCM &nbsp;is defined as the maximum amount of the SCM that is capable in participating in the chemical reactions &nbsp;– crystalline components generally do not react in cementitious systems (</span><a class="rvts16" href="References.html#GLO2021">Glosser et al., 2021</a><span class="rvts6">). As an alternative to assuming full reactivity of the SCM (e.g. in </span><a class="rvts16" href="Tutorial-Calculatethecementhydr1.html">Tutorial </a><a class="rvts16" href="Tutorial-Calculatethecementhydr1.html">Calculate the cement hydrates assemblages with part of OPC is replaced by GBSF</a><span class="rvts6">), it can be assumed that only part of the SCM is reactive. Following the approaches proposed by </span><a class="rvts16" href="References.html#GLO2021">Glosser et al. (2021)</a><span class="rvts6"> for fly-ash, the alternatives are for the case where the SCM composition is defined in terms of bulk content of oxides:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">•</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">An overall reactivity is defined; each oxide content is multiplied with the reactivity.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">•</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">An oxide-specific reactivity&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Methods for obtaining the overall of the oxide-specific reactivity of fly-ash is given in </span><a class="rvts16" href="References.html#GLO2021">Glosser et al. (2021)</a><span class="rvts6">.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">For each SCM in the </span><span class="rvts33">ModuleCement_Input_02_Recipe</span><span class="rvts33"> tab</span><span class="rvts6">, the type of reactivity of the SCM is specified via the drop down menu </span><span class="rvts38">SCM</span><span class="rvts33">::Reactivity</span><span class="rvts6"> (</span><span class="rvts39">SCM</span><span class="rvts6"> is e.g. GBFS, FA, …) - &nbsp;(see Figure below):</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
  <li style="text-indent: 0px" class="rvps12 noindent"><span class="rvts40">Option “Full Reactivity” </span><span class="rvts41">– assuming 100% reactivity of all oxides.</span></li>
  <li style="text-indent: 0px" class="rvps12 noindent"><span class="rvts40">Option “Bulk Reactivity”</span><span class="rvts41"> – assuming the same reactivity of all oxides. The reactivity is defined in data blocks with the oxide composition of the SCM in the column </span><span class="rvts45">Rtot</span><span class="rvts41"> </span><span class="rvts42">(e.g., in the data block </span><a class="rvts46" href="GBFS.html">GBFS</a><span class="rvts41">, similar for the other SCMs).</span></li>
  <li style="text-indent: 0px" class="rvps12 noindent"><span class="rvts40">Option “Oxide Specific”</span><span class="rvts41"> – assuming an oxide-specific reactivity. The reactivity is defined in data blocks with the oxide composition of the SCM in the columns </span><span class="rvts45">R</span><span class="rvts47">oxide</span><span class="rvts41"> (</span><span class="rvts43">oxide</span><span class="rvts41"> = CaO, SiO</span><span class="rvts44">2</span><span class="rvts41">, …) &nbsp;</span><span class="rvts42">(e.g., in the data block </span><a class="rvts46" href="GBFS.html">GBFS</a><span class="rvts41">, similar for the other SCMs).</span></li>
 </ul>
-<p class="rvps3"><span class="rvts8"><br/></span></p>
-<p class="rvps3"><span class="rvts8">Note that the variable </span><span class="rvts13">SCM</span><span class="rvts8">::ReactedAmount parameter …expressed in %.&nbsp;</span></p>
-<p class="rvps3"><span class="rvts8"><br/></span></p>
-<p class="rvps3"><img alt="" style="padding : 1px;" src="lib/Reactivity%20of%20SCMs.png"><span class="rvts8"></span></p>
-<p class="rvps2" style="clear: both;"><span class="rvts6">Created with the Personal Edition of HelpNDoc: </span><a class="rvts7" href="https://www.helpndoc.com/step-by-step-guides/how-to-convert-a-hlp-winhelp-help-file-to-a-chm-html-help-help-file/">Upgrade your help files and your workflow with HelpNDoc's WinHelp HLP to CHM conversion</a></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Note that the variable </span><span class="rvts14">SCM</span><span class="rvts6">::ReactedAmount parameter …expressed in %.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><img alt="" style="padding : 1px;" src="lib/Reactivity%20of%20SCMs.png"><span class="rvts6"></span></p>
+<p class="rvps4" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/step-by-step-guides/how-to-convert-a-hlp-winhelp-help-file-to-a-chm-html-help-help-file/">Upgrade your help files and your workflow with HelpNDoc's WinHelp HLP to CHM conversion</a></p>
 
             </div>
             
-            <div id="topic_footer"><div id="topic_footer_content">Diederik Jacques</div></div>
+            <div id="topic_footer"><div id="topic_footer_content">&lt;use default value&gt;</div></div>
         </div>  <!-- /#topic-content -->
     </article>
 
