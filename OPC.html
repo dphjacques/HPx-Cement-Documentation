@@ -169,7 +169,7 @@
                         <li><a href="ModuleBlocks.html">Module Blocks</a></li><li><a href="DataBlocks.html">Data Blocks</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group" role="group"><div class="btn-group"><button type="button" title="In this page..." class="btn btn-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="bi bi-three-dots" aria-hidden="true"></span></button><ul id="inline-toc" class="dropdown-menu dropdown-menu-right"></ul></div><a class="btn btn-default" href="DataBlocks.html" title="Data Blocks" role="button"><span class="bi bi-chevron-up" aria-hidden="true"></span></a><a class="btn btn-default" href="GBFS.html" title="GBFS" role="button"><span class="bi bi-chevron-left" aria-hidden="true"></span></a><a class="btn btn-default" href="OPC_alite.html" title="OPC_alite" role="button"><span class="bi bi-chevron-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="DataBlocks.html" title="Data Blocks" role="button"><span class="bi bi-chevron-up" aria-hidden="true"></span></a><a class="btn btn-default" href="MK.html" title="MK" role="button"><span class="bi bi-chevron-left" aria-hidden="true"></span></a><a class="btn btn-default" href="OPC_alite.html" title="OPC_alite" role="button"><span class="bi bi-chevron-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -180,14 +180,134 @@
 
             <div class="main-content">
                 
-<p class="rvps2"><span class="rvts6">The </span><span class="rvts33">OPC</span><span class="rvts6"> data block contains information on the composition of OPC clinkers in terms of weight percentages of the different oxides.</span></p>
+<p class="rvps2"><span class="rvts6">The </span><span class="rvts35">OPC</span><span class="rvts6"> data block contains information on the composition of OPC clinkers in terms of weight percentages of the different oxides.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><img alt="" style="padding : 1px;" src="lib/OPC.png"><span class="rvts6"></span></p>
+<p class="rvps2"><img alt="" style="padding : 1px;" src="lib/OPC.png"></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The data block contains following columns</span></p>
+<div class="rvps2">
+<table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 124px;">
+   <p class="rvps2"><span class="rvts35"><br/></span></p>
+   <p class="rvps2"><span class="rvts35">Name</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 762px;">
+   <p class="rvps2"><span class="rvts6">Unique identifier of the OPC oxide composition. The name appears in linked drop down lists in input tables, e.g. </span><span class="rvts6">Cement::Clinker::Reference$</span><span class="rvts6"> in the </span><a class="rvts16" href="Group-OPCClinker1.html">OPC Clinker</a><span class="rvts6"> group of </span><a class="rvts16" href="ModuleCement_Input_02_Recipe.html">ModuleCement_Input_02_Recipe</a><span class="rvts6"> table.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 124px;">
+   <p class="rvps2"><span class="rvts35">Unit</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 762px;">
+   <p class="rvps2"><span class="rvts6">Defines the used unit. Only mass% (i.e. g/100 g OPC clinker) is valid. Not used.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 124px;">
+   <p class="rvps2"><span class="rvts35">BulkDensity</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 762px;">
+   <p class="rvps2"><span class="rvts6">Bulk density of the OPC clinker in kg/dm³.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 124px;">
+   <p class="rvps2"><span class="rvts35">CaO</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 762px;">
+   <p class="rvps2"><span class="rvts6">The mass percentage of CaO in the OPC cement.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 124px;">
+   <p class="rvps2"><span class="rvts35">SiO2</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 762px;">
+   <p class="rvps2"><span class="rvts6">The mass percentage of SiO</span><span class="rvts22">2</span><span class="rvts6"> in the OPC cement.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 124px;">
+   <p class="rvps2"><span class="rvts35">Al2O3</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 762px;">
+   <p class="rvps2"><span class="rvts6">The mass percentage of Al</span><span class="rvts22">2</span><span class="rvts6">O</span><span class="rvts22">3</span><span class="rvts6"> in the OPC cement.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 124px;">
+   <p class="rvps2"><span class="rvts35">CO2</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 762px;">
+   <p class="rvps2"><span class="rvts6">The mass percentage of CO</span><span class="rvts22">2</span><span class="rvts6"> in the OPC cement.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 124px;">
+   <p class="rvps2"><span class="rvts35">SO3</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 762px;">
+   <p class="rvps2"><span class="rvts6">The mass percentage of SO</span><span class="rvts22">3</span><span class="rvts6"> in the OPC cement.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 124px;">
+   <p class="rvps2"><span class="rvts35">Fe2O3</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 762px;">
+   <p class="rvps2"><span class="rvts6">The mass percentage of Fe</span><span class="rvts22">2</span><span class="rvts6">O</span><span class="rvts22">3</span><span class="rvts6"> in the OPC cement.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 124px;">
+   <p class="rvps2"><span class="rvts35">MgO</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 762px;">
+   <p class="rvps2"><span class="rvts6">The mass percentage of MgO in the OPC cement.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 124px;">
+   <p class="rvps2"><span class="rvts35">Na2O</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 762px;">
+   <p class="rvps2"><span class="rvts6">The mass percentage of Na</span><span class="rvts22">2</span><span class="rvts6">O in the OPC cement.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 124px;">
+   <p class="rvps2"><span class="rvts35">K2O</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 762px;">
+   <p class="rvps2"><span class="rvts6">The mass percentage of K</span><span class="rvts22">2</span><span class="rvts6">O in the OPC cement.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The names and order of these columns may not be changed.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">One composition is available (the user can add additional other compositions with unique names - see </span><a class="rvts16" href="DataBlocks.html#Add">Add records</a><span class="rvts6">)</span></p>
+<div class="rvps2">
+<table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 149px;">
+   <p class="rvps2"><span class="rvts6">Lot06</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 541px;">
+   <p class="rvps2"><span class="rvts6">OPC composition from </span><a class="rvts16" href="References.html#LOT2006">Lothenbach and Winnefeld (2006)</a><span class="rvts6"> - Table 1.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p></p>
 <p class="rvps4" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/feature-tour/create-ebooks-for-amazon-kindle">Full-featured Kindle eBooks generator</a></p>
 
             </div>
             
-            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; &lt;Dates&gt; by &lt;Authors&gt;. All Rights Reserved.</div></div>
+            <div id="topic_footer"><div id="topic_footer_content">&lt;use default value&gt;</div></div>
         </div>  <!-- /#topic-content -->
     </article>
 

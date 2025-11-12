@@ -169,7 +169,7 @@
                         <li><a href="GettingStarted.html">Getting Started</a></li><li><a href="Set-upHPGeochemistry.html">Set-up HPGeochemistry</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group" role="group"><div class="btn-group"><button type="button" title="In this page..." class="btn btn-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="bi bi-three-dots" aria-hidden="true"></span></button><ul id="inline-toc" class="dropdown-menu dropdown-menu-right"></ul></div><a class="btn btn-default" href="Set-upHPGeochemistry.html" title="Set-up HPGeochemistry" role="button"><span class="bi bi-chevron-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Tutorial-CreateManagedProjectwit.html" title="Tutorial- Create Managed Project with Cement Module" role="button"><span class="bi bi-chevron-left" aria-hidden="true"></span></a><a class="btn btn-default" href="ThermodynamicModellingofCementHy.html" title="Thermodynamic Modelling of Cement Hydrates" role="button"><span class="bi bi-chevron-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Set-upHPGeochemistry.html" title="Set-up HPGeochemistry" role="button"><span class="bi bi-chevron-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Tutorial-CreateManagedProjectwit.html" title="Tutorial- Create Managed Project with Cement Module" role="button"><span class="bi bi-chevron-left" aria-hidden="true"></span></a><a class="btn btn-default" href="ThermodynamicModellingofCementHy.html" title="Thermodynamic Modelling of Cement Hydrates" role="button"><span class="bi bi-chevron-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -180,36 +180,36 @@
 
             <div class="main-content">
                 
-<p class="rvps10"><span class="rvts27">Tutorial - </span><span class="rvts27">Update the Cement Module</span></p>
+<p class="rvps11"><span class="rvts30">Tutorial - </span><span class="rvts30">Update the Cement Module</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps9"><span class="rvts26">Description</span></p>
-<p class="rvps9"><span class="rvts25">When a new version of the cement module is available, and it is downloaded in the general Module directory of HPx (HYDRUS 5.x; see tutorial </span><a class="rvts32" href="Tutorial-Installcementmodule.html">Install cement module</a><span class="rvts25">), the files of the module in an existing project can be updated.</span></p>
-<p class="rvps9"><span class="rvts25"><br/></span></p>
-<p class="rvps9"><span class="rvts26">You will learn to</span></p>
-<p class="rvps9"><span class="rvts25">To update the cement module</span></p>
-<p class="rvps9"><span class="rvts26"><br/></span></p>
-<p class="rvps9"><span class="rvts26">Depends on</span></p>
-<p class="rvps9"><span class="rvts25">Tutorial - </span><a class="rvts32" href="Tutorial-CreateManagedProjectwit.html">Create Managed Project with Cement Module</a></p>
+<p class="rvps10"><span class="rvts29">Description</span></p>
+<p class="rvps10"><span class="rvts28">When a new version of the cement module is available, and it is downloaded in the general Module directory of HPx (HYDRUS 5.x; see tutorial </span><a class="rvts34" href="Tutorial-Installcementmodule.html">Install cement module</a><span class="rvts28">), the files of the module in an existing project can be updated.</span></p>
+<p class="rvps10"><span class="rvts28"><br/></span></p>
+<p class="rvps10"><span class="rvts29">You will learn to</span></p>
+<p class="rvps10"><span class="rvts28">To update the cement module</span></p>
+<p class="rvps10"><span class="rvts29"><br/></span></p>
+<p class="rvps10"><span class="rvts29">Depends on</span></p>
+<p class="rvps10"><span class="rvts28">Tutorial - </span><a class="rvts34" href="Tutorial-CreateManagedProjectwit.html">Create Managed Project with Cement Module</a></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps7"><span class="rvts22">Update the module in an existing project&nbsp;</span></p>
-<p class="rvps8"><span class="rvts23">Click </span><span class="rvts29">Open meta data project</span><span class="rvts23"> &nbsp;button &nbsp;</span><img alt="" style="padding : 1px;" src="lib/Manager%20-%20Project%20-%20View.svg"></p>
-<p class="rvps8"><span class="rvts23">Click </span><span class="rvts29">Module Manager</span><span class="rvts23"> &nbsp;button &nbsp;</span><img alt="" style="padding : 1px;" src="lib/MetaData_Project_ModuleManager.png"></p>
-<p class="rvps8"><span class="rvts23">Check </span><span class="rvts29">Cement Module</span></p>
-<p class="rvps11"><span class="rvts6">It will recognize that the module is already imported and will list for each sub folder of the module new files (not present in the project) and existing files (</span><span class="rvts15">see figures below</span><span class="rvts6">). The user can select existing files should be replaced.&nbsp;</span></p>
-<p class="rvps11"><span class="rvts6">In the figure below, the files in the folder </span><span class="rvts33">Data</span><span class="rvts6"> will not be replaced (by default) – these files can contain project-specific information defined via the graphical user interface.&nbsp;</span></p>
-<p class="rvps11"><span class="rvts6">By default, existing files in the </span><span class="rvts33">Data</span><span class="rvts6">, </span><span class="rvts33">Database</span><span class="rvts6"> and </span><span class="rvts33">Scripts</span><span class="rvts6"> folders are not replaced (but can be overruled by checking the checkbox). Files in </span><span class="rvts33">Modules</span><span class="rvts6"> and </span><span class="rvts33">Transport</span><span class="rvts6"> will be replace.</span></p>
-<p class="rvps11"><img alt="" style="padding : 1px;" src="lib/TGUpdateModule_UpdateModule_Existing.png"></p>
-<p class="rvps11"><img alt="" style="padding : 1px;" src="lib/TGUpdateModule_UpdateModule_New.png"></p>
-<p class="rvps11"><span class="rvts6"><br/></span></p>
-<p class="rvps8"><span class="rvts23">The default options (as described above) are used.</span></p>
-<p class="rvps8"><span class="rvts23">Click Import</span></p>
-<p class="rvps8"><span class="rvts23">Click OK</span></p>
-<p class="rvps10"><span class="rvts27">END </span><span class="rvts27">Update the Cement Module</span><span class="rvts27"></span></p>
+<p class="rvps8"><span class="rvts25">Update the module in an existing project&nbsp;</span></p>
+<p class="rvps9"><span class="rvts26">Click </span><span class="rvts31">Open meta data project</span><span class="rvts26"> &nbsp;button &nbsp;</span><img alt="" style="padding : 1px;" src="lib/Manager%20-%20Project%20-%20View.svg"></p>
+<p class="rvps9"><span class="rvts26">Click </span><span class="rvts31">Module Manager</span><span class="rvts26"> &nbsp;button &nbsp;</span><img alt="" style="padding : 1px;" src="lib/MetaData_Project_ModuleManager.png"></p>
+<p class="rvps9"><span class="rvts26">Check </span><span class="rvts31">Cement Module</span></p>
+<p class="rvps12"><span class="rvts6">It will recognize that the module is already imported and will list for each sub folder of the module new files (not present in the project) and existing files (</span><span class="rvts15">see figures below</span><span class="rvts6">). The user can select existing files should be replaced.&nbsp;</span></p>
+<p class="rvps12"><span class="rvts6">In the figure below, the files in the folder </span><span class="rvts35">Data</span><span class="rvts6"> will not be replaced (by default) – these files can contain project-specific information defined via the graphical user interface.&nbsp;</span></p>
+<p class="rvps12"><span class="rvts6">By default, existing files in the </span><span class="rvts35">Data</span><span class="rvts6">, </span><span class="rvts35">Database</span><span class="rvts6"> and </span><span class="rvts35">Scripts</span><span class="rvts6"> folders are not replaced (but can be overruled by checking the checkbox). Files in </span><span class="rvts35">Modules</span><span class="rvts6"> and </span><span class="rvts35">Transport</span><span class="rvts6"> will be replace.</span></p>
+<p class="rvps12"><img alt="" style="padding : 1px;" src="lib/TGUpdateModule_UpdateModule_Existing.png"></p>
+<p class="rvps12"><img alt="" style="padding : 1px;" src="lib/TGUpdateModule_UpdateModule_New.png"></p>
+<p class="rvps12"><span class="rvts6"><br/></span></p>
+<p class="rvps9"><span class="rvts26">The default options (as described above) are used.</span></p>
+<p class="rvps9"><span class="rvts26">Click Import</span></p>
+<p class="rvps9"><span class="rvts26">Click OK</span></p>
+<p class="rvps11"><span class="rvts30">END </span><span class="rvts30">Update the Cement Module</span><span class="rvts30"></span></p>
 <p class="rvps4" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/feature-tour/stunning-user-interface/">Experience a User-Friendly Interface with HelpNDoc's Documentation Tool</a></p>
 
             </div>
             
-            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; &lt;Dates&gt; by &lt;Authors&gt;. All Rights Reserved.</div></div>
+            <div id="topic_footer"><div id="topic_footer_content">&lt;use default value&gt;</div></div>
         </div>  <!-- /#topic-content -->
     </article>
 
