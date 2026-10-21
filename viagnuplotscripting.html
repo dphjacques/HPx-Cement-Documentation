@@ -1,0 +1,301 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Standard Edition 10.2.0.196">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>via gnuplot scripting</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="set cbtics,set colorbox,set palette,set cntrparam,set cntrparam,TERNARY_NO_GRID,TERNARY_TIC_LENGTH,TERNARY_X_MAX,TERNARY_X_MIN,TERNARY_X_STEP,TERNARY_Y_MAX,TERNARY_Y_MIN,TERNARY_Y_STEP,TERNARY_Z_MAX,TERNARY_Z_MIN,TERNARY_Z_STEP,set cbtics,set colorbox,set palette,TERNARY_CONTOUR_WIDTH,TERNARY_CONTOUR_LT">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="via gnuplot scripting">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="via gnuplot scripting" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="HPx - Module Cementitious Materials" /> 
+
+  <!-- Bootstrap CSS -->
+  <link href="vendors/bootstrap-5.3.7/bootstrap.min.css" rel="stylesheet"/>
+  <link href="vendors/bootstrap-icons-1.13.1/bootstrap-icons.min.css" rel="stylesheet"/>
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="visually-hidden">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>HPx - Module Cementitious Materials</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="bi bi-x" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="nav-item tab">
+            <a href="#contents" id="tab-contents" class="nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#contents" aria-controls="contents" aria-selected="true">
+                <i class="bi bi-list-ul"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#index" id="tab-index" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#index" aria-controls="index" aria-selected="false">
+                <i class="bi bi-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#search" id="tab-search" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#search" aria-controls="search" aria-selected="false">
+                <i class="bi bi-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="bi bi-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="viagnuplotscripting"
+		  data-hnd-context="116"
+		  data-hnd-title="via gnuplot scripting"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Advancedtopics.html">Advanced topics</a></li><li><a href="OutputPlotting.html">Output &amp; Plotting</a></li><li><a href="Ternarygraphs.html">Ternary graphs</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Ternarygraphs.html" title="Ternary graphs" role="button"><span class="bi bi-chevron-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Ternarygraphs.html" title="Ternary graphs" role="button"><span class="bi bi-chevron-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Miscellanea.html" title="Miscellanea" role="button"><span class="bi bi-chevron-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>via gnuplot scripting</h2>
+
+            <div class="main-content">
+                
+<p class="rvps2"><span class="rvts6">In the current version, the changes on a ternary graphs can only be done via gnuplot script commands. These commands are illustrated in the tutorial </span><span class="rvts6">Blending of OPC with GFBS and SF in variable amounts (ternary)</span><span class="rvts6"> (see </span><a class="rvts16" href="Tutorial-BlendingofOPCwithGBFSan.html">TB_Ternary</a><span class="rvts6">).</span></p>
+<h1 class="rvps7"><a name="ScaleofAxes"></a><span class="rvts0"><span class="rvts87">Scale of the axes</span></span></h1>
+<p class="rvps13"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Zooming in a specific region of the ternary graph are set with </span><span class="rvts53">TERNARY_X_MIN</span><span class="rvts6">, </span><span class="rvts53">TERNARY_X_MAX</span><span class="rvts6">, </span><span class="rvts53">TERNARY_Y_MIN</span><span class="rvts6">, </span><span class="rvts53">TERNARY_Y_MAX</span><span class="rvts6">, </span><span class="rvts53">TERNARY_Z_MIN</span><span class="rvts6">, and </span><span class="rvts53">TERNARY_Z_MAX</span><span class="rvts6">.</span></p>
+<p class="rvps2"><span class="rvts6">To be valid, an equilateral triangle subregion needs to be defined constraint by a total sum of 100. Three variables are independent, three are dependent.</span></p>
+<p class="rvps2"><span class="rvts6">If the minimum values for each axis are defined, the zoom region is set via</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps17"><span class="rvts53">TERNARY_X_MIN = 70</span></p>
+<p class="rvps17"><span class="rvts53">TERNARY_Y_MIN = 0</span></p>
+<p class="rvps17"><span class="rvts53">TERNARY_Z_MIN = 0</span></p>
+<p class="rvps17"><span class="rvts53">L = 100 - TERNARY_X_MIN - TERNARY_Y_MIN - TERNARY_Z_MIN&nbsp;</span></p>
+<p class="rvps17"><span class="rvts53"><br/></span></p>
+<p class="rvps17"><span class="rvts53">TERNARY_X_MAX = TERNARY_X_MIN + L</span></p>
+<p class="rvps17"><span class="rvts53">TERNARY_Y_MAX = TERNARY_Y_MIN + L</span></p>
+<p class="rvps17"><span class="rvts53">TERNARY_Z_MAX = TERNARY_Z_MIN + L</span></p>
+<p class="rvps2"><span class="rvts75"><br/></span></p>
+<p class="rvps2"><span class="rvts6">If the range of one of the axis is set together with the minimum of of another axis, the zoom region is set via (X full range and Y minimum value)</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps17"><span class="rvts53">TERNARY_X_MIN = 60</span></p>
+<p class="rvps17"><span class="rvts53">TERNARY_X_MAX = 85</span></p>
+<p class="rvps17"><span class="rvts53">TERNARY_Y_MIN = 15</span></p>
+<p class="rvps17"><span class="rvts53">L = TERNARY_X_MAX - TERNARY_X_MIN&nbsp;</span></p>
+<p class="rvps17"><span class="rvts53"><br/></span></p>
+<p class="rvps17"><span class="rvts53">TERNARY_Y_MAX = TERNARY_Y_MIN + L</span></p>
+<p class="rvps17"><span class="rvts53">TERNARY_Z_MIN = 100 - TERNARY_X_MIN - TERNARY_Y_MIN &nbsp;-L</span></p>
+<p class="rvps17"><span class="rvts53">TERNARY_Z_MAX = TERNARY_Z_MIN + L</span></p>
+<p class="rvps2"><span class="rvts75"><br/></span></p>
+<p class="rvps2"><span class="rvts6">If unacceptable values are selected, the ternary graph will have an invalid zoom region and other values need to be defined. A quick check is&nbsp;</span></p>
+<p class="rvps34"><span class="rvts86"><br/></span></p>
+<p class="rvps35"><span class="rvts53">Xmin + Ymin + L ≤ 100</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">When a zoom region is defined, tic length may become too long - the default value is 2. When defining the zoom region, a good rule of thumb for setting the tic length is </span><span class="rvts53">2.0*L/100</span><span class="rvts6"> (given </span><span class="rvts53">L</span><span class="rvts6"> is defined as above) using </span><span class="rvts53">TERNARY_TIC_LENGTH</span><span class="rvts6">:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts53">TERNARY_TIC_LENGTH = 2.0*L/100</span></p>
+<p class="rvps2"><span class="rvts75"><br/></span></p>
+<p class="rvps13"><span class="rvts6"><br/></span></p>
+<h1 class="rvps7"><a name="Labels"></a><span class="rvts0"><span class="rvts87">Labels and Grid</span></span></h1>
+<p class="rvps2"><span class="rvts6">The label and grid spacing are set with </span><span class="rvts53">TERNARY_X_STEP</span><span class="rvts6">, </span><span class="rvts53">TERNARY_Y_STEP</span><span class="rvts6">, and </span><span class="rvts53">TERNARY_Z_STEP</span><span class="rvts6">, for example</span></p>
+<p class="rvps17"><span class="rvts53"><br/></span></p>
+<p class="rvps17"><span class="rvts53">TERNARY_X_STEP = 5</span></p>
+<p class="rvps17"><span class="rvts53">TERNARY_Y_STEP = 5</span></p>
+<p class="rvps17"><span class="rvts53">TERNARY_Z_STEP = 5</span></p>
+<p class="rvps17"><span class="rvts53"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Removing grid lines is done with </span><span class="rvts53">TERNARY_NO_GRID</span><span class="rvts6">. When it is set to 1, grid lines will not appear (default value is 0 with grid lines displayed). When defining a zoom region, some tics may disappear - this issue is not solved yet. Removing the grid lines (</span><span class="rvts53">TERNARY_NO_GRID = 1</span><span class="rvts6">) will solve this.</span></p>
+<p class="rvps13"><span class="rvts6"><br/></span></p>
+<h1 class="rvps7"><span class="rvts0"><span class="rvts87">Colour scale</span></span></h1>
+<p class="rvps21"><span class="rvts6">The colour is defined with the </span><a class="rvts16" href="http://www.gnuplot.info/docs_6.0/loc14765.html">set palette</a><span class="rvts6"> commands from gnuplot. The default values are:</span></p>
+<p class="rvps17"><span class="rvts6"><br/></span></p>
+<p class="rvps17"><span class="rvts53">set palette maxcolors 10</span></p>
+<p class="rvps17"><span class="rvts53">set palette model RGB</span></p>
+<p class="rvps17"><span class="rvts53">set palette defined (0 "web-blue" , 0.25 "light-blue", 0.5 "web-green", 0.75 "yellow" , 1.0 "red")</span></p>
+<p class="rvps17"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The colorbox is defined with the </span><a class="rvts16" href="http://www.gnuplot.info/docs_6.0/loc11402.html">set colorbox</a><span class="rvts6"> command, colorbox tics and labels with </span><a class="rvts16" href="http://www.gnuplot.info/docs_6.0/loc18413.html">set cbtics</a><span class="rvts6">. The default values are:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps17"><span class="rvts53">set colorbox vertical user origin 0.85,.175 size .03,.725&nbsp;</span></p>
+<p class="rvps17"><span class="rvts53">set cbtics scale 0</span></p>
+<p class="rvps13"><span class="rvts6"><br/></span></p>
+<h1 class="rvps7"><span class="rvts0"><span class="rvts87">Contours</span></span></h1>
+<p class="rvps13"><span class="rvts6">TBC</span></p>
+<p class="rvps13"><span class="rvts6"><br/></span></p>
+<p class="rvps13"><span class="rvts75"></span><span class="rvts6"></span></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2026  by Diederik Jacques. All Rights Reserved.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-bs-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-5.3.7/bootstrap.bundle.min.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script src="_topic_init.js"></script>
+
+
+
+</body>
+
+</html>
+

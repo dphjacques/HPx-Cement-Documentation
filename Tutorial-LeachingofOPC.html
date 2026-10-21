@@ -1,0 +1,365 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Standard Edition 10.2.0.196">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Tutorial - Leaching of OPC</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Tutorial - Leaching of OPC">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Tutorial - Leaching of OPC" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="HPx - Module Cementitious Materials" /> 
+
+  <!-- Bootstrap CSS -->
+  <link href="vendors/bootstrap-5.3.7/bootstrap.min.css" rel="stylesheet"/>
+  <link href="vendors/bootstrap-icons-1.13.1/bootstrap-icons.min.css" rel="stylesheet"/>
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="visually-hidden">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>HPx - Module Cementitious Materials</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="bi bi-x" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="nav-item tab">
+            <a href="#contents" id="tab-contents" class="nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#contents" aria-controls="contents" aria-selected="true">
+                <i class="bi bi-list-ul"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#index" id="tab-index" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#index" aria-controls="index" aria-selected="false">
+                <i class="bi bi-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#search" id="tab-search" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#search" aria-controls="search" aria-selected="false">
+                <i class="bi bi-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="bi bi-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Tutorial-LeachingofOPC"
+		  data-hnd-context="121"
+		  data-hnd-title="Tutorial - Leaching of OPC"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Modellingdegradationprocess-Mixe.html">Modelling degradation process - Mixed Tank Reactor Approach</a></li><li><a href="Leaching.html">Leaching</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Leaching.html" title="Leaching" role="button"><span class="bi bi-chevron-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Leaching.html" title="Leaching" role="button"><span class="bi bi-chevron-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Tutorial-Leachingofbinarycements.html" title="Tutorial - Leaching of binary cement system - Parametric study" role="button"><span class="bi bi-chevron-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Tutorial - Leaching of OPC</h2>
+
+            <div class="main-content">
+                
+<p class="rvps25"><span class="rvts46">Tutorial </span><span class="rvts46">TL_OPCPH3</span><span class="rvts46"> - </span><span class="rvts46">Leaching of CEM-I - OPC</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps24"><span class="rvts45">Description</span></p>
+<p class="rvps24"><span class="rvts44">Calculate the leaching of hydrated Ordinary Portland cement (100 g CEM-I with a water/cement ratio of 0.5 and at a temperature of 25°C) with a HCl solution at pH 3. The CEM I oxide composition is taken from the </span><a class="rvts51" href="References.html#LOT2006">Lothenbach and Winnefeld (2006)</a><span class="rvts44"> (their table 1). Calculations are done for the Ca-Si-Al-S-Mg-C-Na-K system.</span></p>
+<p class="rvps24"><span class="rvts44"><br/></span></p>
+<p class="rvps24"><span class="rvts45">You will learn to</span></p>
+<p class="rvps24"><span class="rvts44">Use the template to calculate leaching of hardened cement paste</span></p>
+<p class="rvps24"><span class="rvts45"><br/></span></p>
+<p class="rvps24"><span class="rvts45">Template</span><span class="rvts44"> - </span><a class="rvts51" href="Hydrates_30_Leaching_General.html">Hydrates_30_Leaching_General</a></p>
+<p class="rvps24"><span class="rvts45"><br/></span></p>
+<p class="rvps24"><span class="rvts45">Depends on</span></p>
+<p class="rvps24"><span class="rvts44">Tutorial creating a study from a template as illustrated in </span><a class="rvts51" href="Tutorial-Calculatethecementhydra.html">Calculate cement hydrates assemblage and pore water composition</a></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps23"><span class="rvts41">Step 1 – Create simulation from template for leaching calculation&nbsp;</span></p>
+<p class="rvps6"><span class="rvts42">Go to </span><span class="rvts20">Project Manager</span><span class="rvts42"> </span><img alt="" style="padding : 1px;" src="lib/Main%20-%20Menu%20-%20Project%20Manager.png"></p>
+<p class="rvps6"><span class="rvts42">Select the project in the bottom panel</span></p>
+<p class="rvps6"><span class="rvts42">Go to </span><span class="rvts20">Templates</span><span class="rvts42"> tab in the top panel</span></p>
+<p class="rvps6"><span class="rvts42">Select the template “</span><span class="rvts42">Hydrates_30_Leaching_General</span><span class="rvts42">” (</span><span class="rvts47">See </span><a class="rvts55" href="Hydrates_30_Leaching_General.html">Hydrates_30_Leaching_General</a><span class="rvts42">)</span></p>
+<p class="rvps6"><span class="rvts42">Click the “</span><span class="rvts20">Create new from template</span><span class="rvts42">” button </span><img alt="" style="padding : 1px;" src="lib/Manager%20-%20Project%20-%20CreateFromTemplate.png"></p>
+<p class="rvps6"><span class="rvts42">The </span><span class="rvts20">Metadata</span><span class="rvts42"> dialogue window opens.</span></p>
+<p class="rvps6"><span class="rvts42">Define the name of the simulation (</span><span class="rvts20">TL_OPCPH3</span><span class="rvts42">)</span></p>
+<p class="rvps6"><span class="rvts42">Click </span><span class="rvts20">OK</span></p>
+<p class="rvps6"><span class="rvts42">The Project Manager is active again.&nbsp;</span></p>
+<p class="rvps6"><span class="rvts42">Select the simulation (</span><span class="rvts20">TL_OPCPH3</span><span class="rvts42">) and click </span><span class="rvts20">Select</span></p>
+<p class="rvps2"><span class="rvts53"><br/></span></p>
+<p class="rvps2"><span class="rvts53"><br/></span></p>
+<p class="rvps23"><span class="rvts41">Step 2 – Define the problem</span></p>
+<p class="rvps6"><span class="rvts42">Go to the </span><span class="rvts20">Global Definitions</span><span class="rvts42"> input tab</span></p>
+<p class="rvps6"><span class="rvts42">Go to the </span><span class="rvts20">Global Variables</span></p>
+<p class="rvps6"><span class="rvts42">The template consists of four tabs:</span></p>
+<div class="rvps6">
+<table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 299px;">
+   <p class="rvps2"><span class="rvts53">Cement Model</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 810px;">
+   <p class="rvps2"><span class="rvts6">To define the cement model</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 299px;">
+   <p class="rvps2"><span class="rvts53">Cement Recipe</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 810px;">
+   <p class="rvps2"><span class="rvts6">To define the cement recipe - in this tutorial, the default settings are used (cement mixture of 100% OPC, 25°C, water-cement ratio of 0.5). No changes are needed here.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 299px;">
+   <p class="rvps2"><span class="rvts53">Leaching</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 810px;">
+   <p class="rvps2"><span class="rvts6">To define the leaching steps and the composition of the leaching water components.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 299px;">
+   <p class="rvps2"><span class="rvts53">Output</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 810px;">
+   <p class="rvps2"><span class="rvts6">To define the required output. This tutorial follow the default setting, so no changes are required.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps6"><span class="rvts42"><br/></span></p>
+<p class="rvps6"><span class="rvts42">Go to the </span><span class="rvts20">Cement Model</span><span class="rvts42"> tab (</span><span class="rvts47">See </span><a class="rvts55" href="ModuleCement_Input_01_ModelSyste.html">ModuleCement_Input_01_ModelSystem</a><span class="rvts47">)</span></p>
+<p class="rvps6"><span class="rvts42">Select</span><span class="rvts20"> system 15 </span><span class="rvts42">from the drop down menu.&nbsp;</span></p>
+<p class="rvps6"><span class="rvts42"><br/></span></p>
+<p class="rvps6"><span class="rvts42">Go to the </span><span class="rvts20">Leaching</span><span class="rvts20"> </span><span class="rvts42">tab (</span><span class="rvts47">See &nbsp;</span><a class="rvts59" href="ModuleCement_Input_20_Leaching.html">ModuleCement_Input_30_Leaching</a><span class="rvts42">)</span></p>
+<p class="rvps6"><img alt="" style="padding : 1px;" src="lib/TL_OPCPH3_LeachingTab.png"></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The tab contains three groups:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts6">The first group ("</span><span class="rvts53">Leaching Amounts</span><span class="rvts6">") defines how the leaching solution is defined, and the leached amounts.</span></li>
+ <li class="rvps2 noindent"><span class="rvts6">The relevance of the second and third groups depends on the choice on how the leaching solutions are defined via the drop down menu variable </span><span class="rvts53">Cement::Leaching::Type$</span><span class="rvts6">.&nbsp;</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The amount of leaching solution is defined by the variables in the first group. The template allows for adding water in four different steps size: first in amounts of 0.01 kg (</span><span class="rvts53">Cement::Leaching::Step0_01</span><span class="rvts6">), followed by steps of 0.1 (</span><span class="rvts53">Cement::Leaching::Step0_1</span><span class="rvts6">), 1 (</span><span class="rvts53">Cement::Leaching::Step1</span><span class="rvts6">) and 10 kg (</span><span class="rvts53">Cement::Leaching::Step10</span><span class="rvts6">). The user specifies the amount of solution in L for each step - number of steps is calculated by the program. In the default set-up, 100 L of solution is added (1 L in 0.01 kg steps, 9 L in 0.1 kg steps and 90 L in 1 kg steps).&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp;</span></p>
+<p class="rvps6"><span class="rvts42">Change value of </span><span class="rvts20">Cement::Leaching::Step10</span><span class="rvts42"> to 300 (resulting in a total amount of solution of 400 L)&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">In this tutorial, the leaching solution is defined in terms of aqueous components that are defined in the </span><span class="rvts53">Components</span><span class="rvts6"> group. Concentrations of the components (in mol/L) and pH are set. To prevent charge balance errors, one of the components or the pH can be selected to obtain a charge balanced solution (see </span><a class="rvts16" href="https://water.usgs.gov/water-resources/software/PHREEQC/documentation/phreeqc3-html/phreeqc3-48.htm">SOLUTION</a><span class="rvts6"> in the PHREEQC manual).&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps6"><span class="rvts42">Set </span><span class="rvts20">Cement::Leaching::Cl</span><span class="rvts42"> to 1E-3 (Cl will be used as the charge-balancing element. A value as low of 1E-15 mol/L may lead to numerical convergence issues in PHREEQC. 1E-3 mol/L is a better starting condition to ensure numerical convergence).</span></p>
+<p class="rvps6"><span class="rvts42">Set </span><span class="rvts42">Cement::Leaching::pH</span><span class="rvts42"> to 3</span></p>
+<p class="rvps6"><span class="rvts42">Select Cl from the drop down list of </span><span class="rvts42">Cement::Leaching::Charge$</span></p>
+<p class="rvps6"><span class="rvts42">Run the problem </span><img alt="" style="padding : 1px;" src="lib/Main%20-%20Menu%20-%20Run.png"></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps23"><span class="rvts41">Step 3 – Make a plot of the volume % as a function of L/S (g/g-</span></p>
+<p class="rvps6"><span class="rvts42">Go to the Graph Workspace </span><img alt="" style="padding : 1px;" src="lib/Main%20-%20Menu%20-%20Graph.png"></p>
+<p class="rvps6"><span class="rvts42"><br/></span></p>
+<p class="rvps6"><span class="rvts79">Evolution of aqueous concentrations - in mmol/kgw</span></p>
+<p class="rvps6"><span class="rvts42">The default graph for aqueous molar concentrations is:</span></p>
+<p class="rvps6"><span class="rvts42"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts42"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts42">In molality (moles/kgw)</span></p>
+<p class="rvps6"><span class="rvts42"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts42"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts42">as a function of added water (kg)</span></p>
+<p class="rvps6"><span class="rvts42"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts42"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts42">with linear scales</span></p>
+<p class="rvps6"><span class="rvts42">The graph is converted to:</span></p>
+<p class="rvps6"><span class="rvts42"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts42"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts42">in mmols/kgw</span></p>
+<p class="rvps6"><span class="rvts42"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts42"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts42">as a function of L/S (g/g)</span></p>
+<p class="rvps6"><span class="rvts42"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts42"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts42">with loglinear scales where the minimum y-value is 10</span><span class="rvts82">-3</span></p>
+<p class="rvps6"><span class="rvts42">Select </span><span class="rvts56">Elements - M</span></p>
+<p class="rvps6"><span class="rvts42">Unselect </span><span class="rvts56">automated update of graph</span><span class="rvts42"> </span><img alt="" style="padding : 1px;" src="lib/Graph%20-%20Automatic%20generation%20-%20Enabled.png"></p>
+<p class="rvps6"><span class="rvts42">Right click -&gt; </span><span class="rvts20">Values Transformation</span><span class="rvts42"> -&gt; </span><span class="rvts56">X</span><span class="rvts42"> -&gt; </span><span class="rvts56">L/S [g:g]</span></p>
+<p class="rvps6"><span class="rvts42">Right click -&gt; </span><span class="rvts20">Values Transformation</span><span class="rvts42"> -&gt; </span><span class="rvts56">Y</span><span class="rvts42"> -&gt; </span><span class="rvts56">mmol/l</span></p>
+<p class="rvps6"><span class="rvts42">Right click -&gt; </span><span class="rvts56">Axis Scale Transformation</span><span class="rvts42"> -&gt; </span><span class="rvts56">X</span><span class="rvts42"> -&gt; </span><span class="rvts56">Log10</span><span class="rvts42">&nbsp;</span></p>
+<p class="rvps6"><span class="rvts42">Right click -&gt; </span><span class="rvts56">Axis Scale Transformation</span><span class="rvts42"> -&gt; </span><span class="rvts56">Y</span><span class="rvts42"> -&gt; </span><span class="rvts56">Log10</span><span class="rvts42">&nbsp;</span></p>
+<p class="rvps6"><span class="rvts42">Click </span><span class="rvts56">Edit Graph Tool</span><span class="rvts42"> </span><img alt="" style="padding : 1px;" src="lib/Edit%20Graph%20Tool%20Icon.png"></p>
+<p class="rvps6"><span class="rvts42">Click </span><span class="rvts56">Scripting Panel</span><span class="rvts42"> </span><img alt="" style="padding : 1px;" src="lib/Edit%20Graph%20Tool%20Commands%20Icon.png"></p>
+<p class="rvps6"><span class="rvts42">Write (gnuplot command - </span><a class="rvts55" href="http://www.gnuplot.info/docs_6.0/loc18205.html">set yrange</a><span class="rvts42">)</span></p>
+<p class="rvps33"><span class="rvts56">set yrange [1E-3:*]</span></p>
+<p class="rvps6"><span class="rvts42">Go back to </span><span class="rvts56">graph navigation</span><span class="rvts42"> </span><img alt="" style="padding : 1px;" src="lib/Graph%20Navigation%20Panel%20icon.png"></p>
+<p class="rvps6"><span class="rvts42">Click </span><span class="rvts56">Update the plot</span><span class="rvts42"> </span><img alt="" style="padding : 1px;" src="lib/Graph%20-%20Automatic%20generation%20-%20Redo.png"></p>
+<p class="rvps6"><span class="rvts42"><br/></span></p>
+<p class="rvps6"><img alt="" style="width : 809px; height : 607px; padding : 1px;" src="lib/TL-OPCpH3%20-%20Elements.png"></p>
+<p class="rvps6"><span class="rvts42"><br/></span></p>
+<p class="rvps6"><span class="rvts42"><br/></span></p>
+<p class="rvps6"><span class="rvts79">Evolution of volumes of hydrates</span></p>
+<p class="rvps6"><span class="rvts42">The default graph of SolidsVolume can be transformed in the same way adapting </span><span class="rvts20">Values Transformation</span><span class="rvts20"> </span><span class="rvts42">for X and Y; Axis scale transformation of X and setting limits on X and Y ranges:</span></p>
+<p class="rvps6"><img alt="" style="width : 1003px; height : 749px; padding : 1px;" src="lib/TL_OPCpH3%20-%20Solid%20Volumes.png"></p>
+<p class="rvps6"><span class="rvts42"><br/></span></p>
+<p class="rvps25"><span class="rvts50">END </span><span class="rvts50">TL_OPCPH3</span><span class="rvts50"> - </span><span class="rvts50">Leaching of CEM-I - OPC</span></p>
+<p class="rvps2"><span class="rvts6"></span><span class="rvts6"></span></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2026  by Diederik Jacques. All Rights Reserved.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-bs-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-5.3.7/bootstrap.bundle.min.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script src="_topic_init.js"></script>
+
+
+
+</body>
+
+</html>
+

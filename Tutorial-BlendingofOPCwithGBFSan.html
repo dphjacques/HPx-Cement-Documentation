@@ -13,7 +13,7 @@
 
   <title>Tutorial - Blending of OPC with GBFS and SF  in variable amounts (ternary)</title>
   <meta name="description" content="" /> 
-  <meta name="keywords" content="Ternary cement mixtures,Blending,Hydrates_10_Blending_General,Hydrates_10_Blending_General">
+  <meta name="keywords" content="Ternary cement mixtures,Blending,Hydrates_10_Blending_General,Hydrates_10_Blending_General,Ternary Graph">
 
 
 
@@ -180,11 +180,166 @@
 
             <div class="main-content">
                 
-<p class="rvps25"><span class="rvts46">Tutorial </span><span class="rvts46">Blending of OPC with GFBS and SF in variable amounts(ternary)</span></p>
+<p class="rvps25"><span class="rvts46">Tutorial </span><span class="rvts46">Blending of OPC with GFBS and SF in variable amounts (ternary)</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps24"><span class="rvts45">Description</span></p>
+<p class="rvps24"><span class="rvts44">Calculate the hydrates assemblage and pore water composition of the hydration of 100 g CEM-I with a water/cement ratio of 0.5 and at a temperature of 25°C when OPC is replaced by GBFS up to 60% and LS also up to 60%. The CEM I oxide composition is taken from the </span><a class="rvts51" href="References.html#LOT2006">Lothenbach and Winnefeld (2006)</a><span class="rvts44"> (their table 1); the GBFS oxide composition from </span><a class="rvts51" href="References.html#ADU201">Adu-Amankwah et al. (2017)</a><span class="rvts44">. Calculations are done in the Ca-Si-Al/Fe-S-Mg-C-Na-K system.</span></p>
+<p class="rvps24"><span class="rvts44"><br/></span></p>
+<p class="rvps24"><span class="rvts45">You will learn to</span></p>
+<p class="rvps24"><span class="rvts44">Calculate equilibrium phases in a ternary blended system</span></p>
 <p class="rvps24"><span class="rvts45"><br/></span></p>
-<p class="rvps24"><span class="rvts45"></span><span class="rvts44"></span></p>
+<p class="rvps24"><span class="rvts45">Template</span><span class="rvts44"> - </span><a class="rvts51" href="Hydrates_10_Blending_general.html">Hydrates_10_Blending_general</a></p>
+<p class="rvps24"><span class="rvts45"><br/></span></p>
+<p class="rvps24"><span class="rvts45">Depends on</span></p>
+<p class="rvps24"><span class="rvts44">Tutorial - </span><a class="rvts51" href="Tutorial-CreateManagedProjectwit.html">Create Managed Project with Cement Module</a></p>
+<p class="rvps24"><span class="rvts44">Tutorial - </span><a class="rvts51" href="Tutorial-BlendingOPCandGBFSalong.html">Blending OPC with 0-60% GBFS (reaction path)</a></p>
+<p class="rvps24"><span class="rvts45"><br/></span></p>
+<p class="rvps2"><span class="rvts23"><br/></span></p>
+<p class="rvps23"><span class="rvts41">Step 1 – Create the simulation from the template to blend materials</span></p>
+<p class="rvps6"><span class="rvts42">Go to </span><span class="rvts20">Project Manager</span><span class="rvts42"> </span><img alt="" style="padding : 1px;" src="lib/Main%20-%20Menu%20-%20Project%20Manager.png"></p>
+<p class="rvps6"><span class="rvts42">Select the project in the bottom panel</span></p>
+<p class="rvps6"><span class="rvts42">Go to </span><span class="rvts20">Templates</span><span class="rvts42"> tab in the top panel</span></p>
+<p class="rvps6"><span class="rvts42">Select the template “</span><span class="rvts20">Hydrates_10_Blending_general</span><span class="rvts42">”</span></p>
+<p class="rvps6"><span class="rvts42">Click the “</span><span class="rvts20">Create new from template</span><span class="rvts42">” button </span><img alt="" style="padding : 1px;" src="lib/Manager%20-%20Project%20-%20CreateFromTemplate.png"></p>
+<p class="rvps6"><span class="rvts42">The </span><span class="rvts20">Metadata</span><span class="rvts42"> dialogue window opens.</span></p>
+<p class="rvps6"><span class="rvts42">Define the name of the simulation (</span><span class="rvts56">TB_Ternary</span><span class="rvts42">)</span></p>
+<p class="rvps6"><span class="rvts42">Optionally add description (</span><span class="rvts56">Blending of OPC with GFBS and SF in variable amounts (ternary)</span><span class="rvts42">)</span></p>
+<p class="rvps6"><span class="rvts42">Click </span><span class="rvts20">OK</span></p>
+<p class="rvps6"><span class="rvts42">The Project Manager is active again.&nbsp;</span></p>
+<p class="rvps6"><span class="rvts42">Select the simulation (</span><span class="rvts56">TB_Ternary</span><span class="rvts42">) and click </span><span class="rvts20">Select</span></p>
+<p class="rvps23"><span class="rvts41">Step 2 – Create the reaction path of blending</span></p>
+<p class="rvps6"><span class="rvts42">Go to</span><span class="rvts20"> Global Definitions</span></p>
+<p class="rvps6"><span class="rvts42">Go to</span><span class="rvts20"> Global Variables</span></p>
+<p class="rvps6"><span class="rvts42">Select the first record (default case)</span></p>
+<p class="rvps6"><span class="rvts42">Change the case name in the </span><span class="rvts20">Name</span><span class="rvts42"> column (OPC-GFBS-LS)</span></p>
+<p class="rvps6"><span class="rvts42">Optionally adapt the description in the </span><span class="rvts20">Description</span><span class="rvts42"> column.</span></p>
+<p class="rvps6"><span class="rvts42">Click on </span><span class="rvts20">Select Mode</span><span class="rvts42"> (</span><img alt="" style="padding : 1px;" src="lib/Global%20Variable%20Table%20-%20Edit%20Mode.png"><span class="rvts42">) icon</span></p>
+<p class="rvps6"><span class="rvts42">Select the </span><span class="rvts20">Parameters</span><span class="rvts42"> panel</span></p>
+<p class="rvps6"><span class="rvts42">Select </span><span class="rvts20">Cement::Clinker::Amount</span></p>
+<p class="rvps6"><span class="rvts42">Select </span><span class="rvts20">GBFS::Amount</span></p>
+<p class="rvps6"><span class="rvts42">Select&nbsp;</span></p>
+<p class="rvps6"><span class="rvts42">Select the </span><span class="rvts20">Values</span><span class="rvts42"> panel</span></p>
+<p class="rvps26"><span class="rvts6">In this panel, the method (to obtain different parameter values) and the options relevant to the method are available.</span></p>
+<p class="rvps6"><img alt="" style="padding : 1px;" src="lib/TB_Ternary_Ternary.png"></p>
+<p class="rvps6"><span class="rvts42">Select </span><span class="rvts56">Ternay</span><span class="rvts42"> in </span><span class="rvts20">Method</span><span class="rvts42"> box (</span><span class="rvts47">See</span><span class="rvts42"> </span><span class="rvts47">Ternary</span><span class="rvts42"> in </span><a class="rvts55" href="https://dphjacques.github.io/HPx-Documentation/Introduction.html" target="_blank">online HPx manual</a><span class="rvts42">)</span></p>
+<p class="rvps6"><span class="rvts42">Set the </span><span class="rvts56">Sum</span><span class="rvts42"> to 100</span></p>
+<p class="rvps6"><span class="rvts42">Select the variable that is calculated from the other two variables in the </span><span class="rvts56">Dependent variable</span><span class="rvts42"> drop-down box (</span><span class="rvts56">LS::Amount</span><span class="rvts42">)</span></p>
+<p class="rvps6"><span class="rvts42">Set the </span><span class="rvts56">starting point,</span><span class="rvts42"> </span><span class="rvts56">end point</span><span class="rvts42"> and the number of </span><span class="rvts56">steps</span><span class="rvts42"> for the two other variables.</span></p>
+<p class="rvps6"><span class="rvts42">No changes needed in the &nbsp;</span><span class="rvts20">Input Model</span><span class="rvts42"> panel</span></p>
+<p class="rvps6"><span class="rvts42"><br/></span></p>
+<p class="rvps23"><span class="rvts41">Step 3 – Set Model and Output Options</span></p>
+<p class="rvps6"><span class="rvts42">Go to the input table via the icon </span><img alt="" style="padding : 1px;" src="lib/Global%20Variable%20Table%20-%20View%20Mode.png"></p>
+<p class="rvps6"><span class="rvts42">Choose model 15-Ca Si Al/Fe S Mg C Na K Cl in the </span><span class="rvts20">Cement System</span><span class="rvts42"> group of the </span><span class="rvts20">Cement Model</span><span class="rvts42"> tab</span></p>
+<p class="rvps6"><span class="rvts42">Choose the s_s_ideal mdoel for AFT (</span><span class="rvts56">Model::AFT_s_s$</span><span class="rvts42">)</span></p>
+<p class="rvps6"><span class="rvts42">Go to the </span><span class="rvts20">Output</span><span class="rvts42"> Tab</span></p>
+<p class="rvps6"><span class="rvts42">Go to the </span><span class="rvts56">Output - Figures - Ternary Diagrams</span><span class="rvts42"> Group</span></p>
+<p class="rvps6"><img alt="" style="padding : 1px;" src="lib/TB_Ternary_Output.png"></p>
+<p class="rvps6"><span class="rvts42">Check </span><span class="rvts56">Cement::Figures::Ternary</span></p>
+<p class="rvps6"><span class="rvts42">Select the variables for the 3 axis:</span></p>
+<p class="rvps6"><span class="rvts56"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts56"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts56">Cement::Figures::Ternary::X$</span><span class="rvts56"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts56">OPC</span></p>
+<p class="rvps6"><span class="rvts56"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts56"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts56">Cement::Figures::Ternary::Y$</span><span class="rvts56"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts56">GBFS</span></p>
+<p class="rvps6"><span class="rvts56"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts56"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts56">Cement::Figures::Ternary::Z$</span><span class="rvts56"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts56">LS</span></p>
+<p class="rvps6"><span class="rvts42">and add the axis labels:</span></p>
+<p class="rvps6"><span class="rvts42"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts56"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts56">Cement::Figures::Ternary::TitleX$</span><span class="rvts56"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts56">Clinker [%]</span></p>
+<p class="rvps6"><span class="rvts56"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts56"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts56">Cement::Figures::Ternary::TitleY$</span><span class="rvts56"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts56">Slag [%]</span></p>
+<p class="rvps6"><span class="rvts56"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts56"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts56">Cement::Figures::Ternary::TitleZ$</span><span class="rvts56"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts56">Limestone [%]</span></p>
+<p class="rvps6"><span class="rvts42">Run </span><img alt="" style="padding : 1px;" src="lib/Main%20-%20Menu%20-%20Run.png"></p>
+<p class="rvps23"><span class="rvts41">Step 4 – Check Log and Plots</span></p>
+<p class="rvps6"><span class="rvts42">Go to the Graph Workspace </span><img alt="" style="padding : 1px;" src="lib/Main%20-%20Menu%20-%20Graph.png"></p>
+<p class="rvps6"><span class="rvts42">The plots under "DefaultGraphs" are not relevant for the ternary blended cements.</span></p>
+<p class="rvps6"><span class="rvts42">The ternary plots are under "Default Ternary Graphs" in several groups.&nbsp;</span></p>
+<p class="rvps6"><span class="rvts42">The graph below shows the ternary pH graph.</span></p>
+<p class="rvps6"><img alt="" style="width : 544px; height : 408px; padding : 1px;" src="lib/TB_Ternary_pH_Default.png"></p>
+<p class="rvps6"><span class="rvts42"><br/></span></p>
+<p class="rvps6"><span class="rvts42">The default graph shows the ternary diagram over the full range (0-100%) for each axis and as a map. There are options to change the graph appearance - in this version, this is only possible via script definitions as explained in </span><a class="rvts55" href="viagnuplotscripting.html">Ternary graphs - via gnuplot scripting</a><span class="rvts42">. Some aspects are illustrated below.</span></p>
+<p class="rvps23"><span class="rvts41">Extra - Adapting Ternary Graphs</span></p>
+<p class="rvps6"><span class="rvts42">In a first step, the scale of the axis are adapted to the relevant area (see </span><a class="rvts55" href="viagnuplotscripting.html#ScaleofAxes">Scale of Axes</a><span class="rvts42">) - note that only an equilateral triangle subregion is allowed (read gives meaningful graphs).&nbsp;</span></p>
+<p class="rvps6"><span class="rvts42">Go to the</span><span class="rvts56"> Edit Graph Tool</span><span class="rvts42"> </span><img alt="" style="padding : 1px;" src="lib/Edit%20Graph%20Tool%20Icon.png"><span class="rvts42"> adapted(See </span><a class="rvts55" href="https://dphjacques.github.io/HPx-Documentation/EditGraphTool.html">HPx manual - Edit Graph Tool</a><span class="rvts42">)</span></p>
+<p class="rvps6"><span class="rvts42">Go to the Scripting Panel </span><img alt="" style="padding : 1px;" src="lib/Edit%20Graph%20Tool%20Commands%20Icon.png"></p>
+<p class="rvps6"><span class="rvts42">Type following text</span></p>
+<p class="rvps17"><span class="rvts77">TERNARY_X_MIN = </span><span class="rvts78">6</span><span class="rvts77">0</span></p>
+<p class="rvps17"><span class="rvts77">TERNARY_Y_MIN = 0</span></p>
+<p class="rvps17"><span class="rvts77">TERNARY_Z_MIN = 0</span></p>
+<p class="rvps17"><span class="rvts77">L = 100 - TERNARY_X_MIN - TERNARY_Y_MIN - TERNARY_Z_MIN&nbsp;</span></p>
+<p class="rvps17"><span class="rvts77"><br/></span></p>
+<p class="rvps17"><span class="rvts77">TERNARY_X_MAX = TERNARY_X_MIN + L</span></p>
+<p class="rvps17"><span class="rvts77">TERNARY_Y_MAX = TERNARY_Y_MIN + L</span></p>
+<p class="rvps17"><span class="rvts77">TERNARY_Z_MAX = TERNARY_Z_MIN + L</span></p>
+<p class="rvps17"><span class="rvts77">TERNARY_TIC_LENGTH = 2.0*L/100</span></p>
+<p class="rvps6"><span class="rvts42">Replot</span></p>
+<p class="rvps6"><img alt="" style="width : 510px; height : 382px; padding : 1px;" src="lib/TB_Ternary_pH_Axis.png"></p>
+<p class="rvps6"><span class="rvts42"><br/></span></p>
+<p class="rvps6"><span class="rvts42">To increase the number of tics on the axis (see </span><a class="rvts55" href="viagnuplotscripting.html#Labels">Scale of Axes</a><span class="rvts42">), type the following text:</span></p>
+<p class="rvps17"><span class="rvts53">TERNARY_X_STEP = 5</span></p>
+<p class="rvps17"><span class="rvts53">TERNARY_Y_STEP = 5</span></p>
+<p class="rvps17"><span class="rvts53">TERNARY_Z_STEP = 5</span></p>
+<p class="rvps6"><span class="rvts42">Replot</span></p>
+<p class="rvps6"><img alt="" style="width : 496px; height : 371px; padding : 1px;" src="lib/TB_Ternary_pH_Change%20Tics.png"></p>
+<p class="rvps6"><span class="rvts42">To increase the number of colors, use the gnuplot command (see </span><a class="rvts55" href="http://www.gnuplot.info/docs_6.0/loc14765.html">gnuplot - set palette</a><span class="rvts42">, left figure below):</span></p>
+<p class="rvps30"><span class="rvts77">set palette maxcolors </span><span class="rvts78">40</span></p>
+<p class="rvps6"><span class="rvts42">Increase to a larger number, to obtain a smoot surface (right figure below):</span></p>
+<p class="rvps6"><img alt="" style="width : 509px; height : 381px; padding : 1px;" src="lib/TB_Ternary_pH_Colors.png"><img alt="" style="width : 510px; height : 383px; padding : 1px;" src="lib/TB_Ternary_pH_ColorsSmooth.png"></p>
+<p class="rvps6"><span class="rvts42"><br/></span></p>
+<p class="rvps6"><span class="rvts42">Alternatively, ternary graphs can be made with contours (without or with contour labels) with or without a coloured background.&nbsp;</span></p>
+<p class="rvps6"><span class="rvts42">Right click the plot name (pH) gives the different available graph types.</span></p>
+<p class="rvps6"><img alt="" style="width : 436px; height : 158px; padding : 1px;" src="lib/TB_Ternary_Graph%20Types.png"></p>
+<p class="rvps6"><span class="rvts42">The default graph type is a filled ternary diagram.&nbsp;</span></p>
+<p class="rvps6"><span class="rvts79">Ternary diagram with contour lines</span></p>
+<p class="rvps6"><span class="rvts42">Selecting </span><span class="rvts56">Contours</span><span class="rvts42"> generates a ternary diagram with contour lines only (the graphs below are made with comments controlling the axis scales, and axis tics as described above).</span></p>
+<p class="rvps6"><img alt="" style="width : 519px; height : 388px; padding : 1px;" src="lib/TB_Ternary_pH_Contour.png"></p>
+<p class="rvps6"><span class="rvts42">Editing is possible with a combination of specific commands</span></p>
+<p class="rvps31"><span class="rvts77">TERNARY_NO_GRID = 1</span></p>
+<p class="rvps31"><span class="rvts75">TERNARY_CONTOUR_WIDTH = 2</span></p>
+<p class="rvps6"><span class="rvts42">respectively, to have no grid at the background and the set the width of the contour lines, and gnuplot commands (see </span><a class="rvts55" href="http://www.gnuplot.info/docs_6.0/loc11252.html">gnuplot - cntrparam</a><span class="rvts42">)</span></p>
+<p class="rvps31"><span class="rvts76">set cntrparam levels incremental 13.25, 0.05, 13.475</span></p>
+<p class="rvps6"><span class="rvts42">to define the contour levels, both in the scripting panel.</span></p>
+<p class="rvps6"><span class="rvts42"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps6"><img alt="" style="width : 549px; height : 412px; padding : 1px;" src="lib/TB_Ternary_pH_CountourUser.png"></p>
+<p class="rvps6"><span class="rvts79">Ternary diagram with contour lines and labels</span></p>
+<p class="rvps6"><span class="rvts42">Right click the plot name (pH) and select </span><span class="rvts56">Contour with labels</span><span class="rvts42">.</span></p>
+<p class="rvps6"><span class="rvts42">The plot below is made with following settings (variables are for manipulating the ternary diagram; set commands are gnuplot commands):</span></p>
+<p class="rvps17"><span class="rvts76">TERNARY_NO_GRID = 1</span></p>
+<p class="rvps17"><span class="rvts76">TERNARY_CONTOUR_WIDTH = 2</span></p>
+<p class="rvps17"><span class="rvts76">set cntrparam levels incremental 13.25,0.05,13.475</span></p>
+<p class="rvps17"><span class="rvts76"><br/></span></p>
+<p class="rvps17"><span class="rvts76">TERNARY_CONTOUR_LT = 5</span></p>
+<p class="rvps17"><span class="rvts76">set linetype 5 lc rgb "red" dt "."</span></p>
+<p class="rvps2"><span class="rvts75"><br/></span></p>
+<p class="rvps6"><img alt="" style="width : 603px; height : 452px; padding : 1px;" src="lib/TB_Ternary_pH_LabelledContour.png"></p>
+<p class="rvps6"><span class="rvts79">Filled ternary graph with contours</span></p>
+<p class="rvps6"><span class="rvts42">Right click the plot name (pH) and select </span><span class="rvts56">Filled and contours</span><span class="rvts42">.</span></p>
+<p class="rvps6"><span class="rvts42">The plot below is made with following settings (variables are for manipulating the ternary diagram; set commands are gnuplot commands):</span></p>
+<p class="rvps17"><span class="rvts76">TERNARY_NO_GRID = 1</span></p>
+<p class="rvps17"><span class="rvts76">set cntrparam levels incremental 13.25,0.05,13.475</span></p>
+<p class="rvps17"><span class="rvts76">set palette maxcolors 12</span></p>
+<p class="rvps2"><span class="rvts75"><br/></span></p>
+<p class="rvps6"><span class="rvts42">&nbsp;</span><img alt="" style="width : 629px; height : 470px; padding : 1px;" src="lib/TB_Ternary_pH_FilledContour.png"></p>
+<p class="rvps6"><span class="rvts42"><br/></span></p>
+<p class="rvps6"><span class="rvts79">Filled ternary graph with labelled contours</span></p>
+<p class="rvps6"><span class="rvts42">Right click the plot name (pH) and select </span><span class="rvts56">Filled and contours with labels</span><span class="rvts42">.</span></p>
+<p class="rvps6"><span class="rvts42">The plot below is made with following settings (variables are for manipulating the ternary diagram; set commands are gnuplot commands):</span></p>
+<p class="rvps17"><span class="rvts76">TERNARY_NO_GRID = 1</span></p>
+<p class="rvps17"><span class="rvts76">TERNARY_NO_GRID = 1</span></p>
+<p class="rvps17"><span class="rvts76">set cntrparam levels incremental 13.30,0.025,13.475</span></p>
+<p class="rvps17"><span class="rvts76">set palette maxcolors 256</span></p>
+<p class="rvps17"><span class="rvts76">TERNARY_CONTOUR_LT = 1</span></p>
+<p class="rvps17"><span class="rvts76">set linetype 1 lc rgb "gray40"</span><span class="rvts77">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts77"><br/></span></p>
+<p class="rvps6"><img alt="" style="width : 597px; height : 446px; padding : 1px;" src="lib/TB_Ternary_pH_FielledContourLabel.png"></p>
+<p class="rvps24"><span class="rvts44">END </span><span class="rvts44">TB_Ternary</span><span class="rvts44"> - </span><span class="rvts44">Blending of OPC with GFBS and SF in variable amounts (ternary)</span></p>
+<p class="rvps16"><span class="rvts6"><br/></span></p>
+<p class="rvps16"><span class="rvts6"><br/></span></p>
+<p class="rvps16"><span class="rvts6"><br/></span></p>
+<p class="rvps16"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts75"><br/></span></p>
+<p class="rvps2"><span class="rvts75"><br/></span></p>
+<p class="rvps16"><span class="rvts6"><br/></span></p>
+<p class="rvps16"><span class="rvts6"><br/></span></p>
+<p class="rvps16"><span class="rvts6">&nbsp;</span></p>
+<p class="rvps16"><span class="rvts75"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps16"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps16"><span class="rvts6"><br/></span></p>
+<p class="rvps16"><span class="rvts6"></span><span class="rvts6"></span></p>
 
             </div>
             

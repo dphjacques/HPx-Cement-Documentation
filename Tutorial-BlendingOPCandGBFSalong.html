@@ -183,7 +183,7 @@
 <p class="rvps25"><span class="rvts46">Tutorial </span><span class="rvts46">TB_Binary</span><span class="rvts46"> - </span><span class="rvts46">Blending OPC with 0-60% GBFS (reaction path)</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps24"><span class="rvts45">Description</span></p>
-<p class="rvps24"><span class="rvts44">Calculate the hydrates assemblage and pore water composition of the hydration of 100 g CEM-I with a water/cement ratio of 0.5 and at a temperature of 25°C when OPC is replace by GBFS up to 60%. The CEM I oxide composition is taken from the </span><a class="rvts51" href="References.html#LOT2006">Lothenbach and Winnefeld (2006)</a><span class="rvts44"> (their table 1); the GBFS oxide composition from </span><a class="rvts51" href="References.html#ADU201">Adu-Amankwah et al. (2017)</a><span class="rvts44">. Calculations are done in the Ca-Si-Al/Fe-S-Mg-C-Na-K system.</span></p>
+<p class="rvps24"><span class="rvts44">Calculate the hydrates assemblage and pore water composition of the hydration of 100 g CEM-I with a water/cement ratio of 0.5 and at a temperature of 25°C when OPC is replaced by GBFS up to 60%. The CEM I oxide composition is taken from the </span><a class="rvts51" href="References.html#LOT2006">Lothenbach and Winnefeld (2006)</a><span class="rvts44"> (their table 1); the GBFS oxide composition from </span><a class="rvts51" href="References.html#ADU201">Adu-Amankwah et al. (2017)</a><span class="rvts44">. Calculations are done in the Ca-Si-Al/Fe-S-Mg-C-Na-K system.</span></p>
 <p class="rvps24"><span class="rvts44"><br/></span></p>
 <p class="rvps24"><span class="rvts45">You will learn to</span></p>
 <p class="rvps24"><span class="rvts44">Include a </span><a class="rvts51" href="Glossary.html#Parametric">parametric study</a></p>
@@ -204,14 +204,13 @@
 <p class="rvps6"><span class="rvts42">Optionally add description (</span><span class="rvts20">Blending OPC with 0-60% GBFS (reaction path)</span><span class="rvts42">)</span></p>
 <p class="rvps6"><span class="rvts42">Click </span><span class="rvts20">OK</span></p>
 <p class="rvps6"><span class="rvts42">The Project Manager is active again.&nbsp;</span></p>
-<p class="rvps6"><span class="rvts42">Select the simulation (Blending) and click </span><span class="rvts20">Select</span></p>
+<p class="rvps6"><span class="rvts42">Select the simulation (</span><span class="rvts20">TB_Binary</span><span class="rvts42">) and click </span><span class="rvts20">Select</span></p>
 <p class="rvps23"><span class="rvts41">Step 2 – Create the reaction path of blending</span></p>
 <p class="rvps6"><span class="rvts42">Go to</span><span class="rvts20"> Global Definitions</span></p>
 <p class="rvps6"><span class="rvts42">Go to</span><span class="rvts20"> Global Variables</span></p>
-<p class="rvps6"><span class="rvts42">Add a case</span></p>
-<p class="rvps6"><img alt="" style="padding : 1px;" src="lib/TB_Binary_Case.png"></p>
-<p class="rvps6"><span class="rvts42">Give the case a name (</span><span class="rvts20">BlendingGBFS</span><span class="rvts42">)</span></p>
-<p class="rvps6"><span class="rvts42">Select the </span><span class="rvts20">Parametric</span><span class="rvts42"> Mode</span></p>
+<p class="rvps6"><span class="rvts42">Select the first record (default case)</span></p>
+<p class="rvps6"><span class="rvts42">Change the case name in the </span><span class="rvts20">Name</span><span class="rvts42"> column (</span><span class="rvts20">BlendingGBFS</span><span class="rvts42">)</span></p>
+<p class="rvps6"><span class="rvts42">Optionally adapt the description in the </span><span class="rvts20">Description</span><span class="rvts42"> column.</span></p>
 <p class="rvps6"><span class="rvts42">Click on </span><span class="rvts20">Select Mode</span><span class="rvts42"> (</span><img alt="" style="padding : 1px;" src="lib/Global%20Variable%20Table%20-%20Edit%20Mode.png"><span class="rvts42">) icon</span></p>
 <p class="rvps6"><img alt="" style="padding : 1px;" src="lib/TB_Binary_ModeParameteric.png"></p>
 <p class="rvps6"><span class="rvts42"><br/></span></p>
@@ -231,7 +230,6 @@
 <p class="rvps6"><span class="rvts42">Select </span><span class="rvts20">GBFS::Amount</span></p>
 <p class="rvps6"><span class="rvts42">Select the </span><span class="rvts20">Values</span><span class="rvts42"> panel</span></p>
 <p class="rvps26"><span class="rvts6">In this panel, the method (to obtain different parameter values) and the options relevant to the method are available.</span></p>
-<p class="rvps26"><span class="rvts6"><br/></span></p>
 <p class="rvps6"><img alt="" style="padding : 1px;" src="lib/TB_Binary_Vector.png"></p>
 <p class="rvps6"><span class="rvts42">Select </span><span class="rvts56">Vector</span><span class="rvts42"> in </span><span class="rvts20">Method</span><span class="rvts42"> box (</span><span class="rvts47">See</span><span class="rvts42"> </span><a class="rvts55" href="https://dphjacques.github.io/HPx-Documentation/Vector.html" target="_blank">Vector</a><span class="rvts42"> in </span><a class="rvts55" href="https://dphjacques.github.io/HPx-Documentation/Introduction.html" target="_blank">online HPx manual</a><span class="rvts42">)</span></p>
 <p class="rvps29"><span class="rvts71">In the Vector method, one defines the start and end point of the vector (or the start point and the increment), the number of increments, and the corresponding numerical values. The vectors with variable values are calculated equally between the start and end point</span></p>
@@ -241,28 +239,22 @@
 <p class="rvps6"><span class="rvts42"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">Cement::Clinker::Amount</span><span class="rvts42"> to, respectively 100 and 40</span></p>
 <p class="rvps6"><span class="rvts42"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">GBFS::Amount</span><span class="rvts20">&nbsp;</span><span class="rvts42"> to, respectively 0 and 60</span></p>
 <p class="rvps6"><span class="rvts42">Select the </span><span class="rvts20">Input Model</span><span class="rvts42"> panel</span></p>
-<p class="rvps29"><span class="rvts71">The third panel identifies the part of the code that needs to be executed with different parameter values. One option is to run the complete input file – PHREEQC will be restarted every time. Output files will be overwritten. A better way is to put the relevant code in a separate file.</span></p>
+<p class="rvps29"><span class="rvts71">The third panel identifies the part of the code that needs to be executed with different parameter values. One option is to run the complete input file – PHREEQC will be restarted every time. Output files will be overwritten. A better way is to put the relevant code in a separate file. The relevant file is already filled in for this template.</span></p>
 <p class="rvps6"><img alt="" style="padding : 1px;" src="lib/TB_Binary_File.png"></p>
-<p class="rvps6"><span class="rvts42">Select </span><span class="rvts20">Specific File</span></p>
-<p class="rvps6"><span class="rvts42">Select </span><span class="rvts20">Modules</span><span class="rvts42"> from the drop down box </span><span class="rvts20">Folder</span></p>
-<p class="rvps6"><span class="rvts42">Check </span><span class="rvts20">Relative Path</span></p>
-<p class="rvps6"><span class="rvts42">Click </span><span class="rvts20">…</span></p>
-<p class="rvps6"><span class="rvts42">Go to </span><span class="rvts20">ModuleCementParametric</span><span class="rvts42"> Folder</span></p>
-<p class="rvps6"><span class="rvts42">Select </span><span class="rvts20">Parametric_10_Hydrates.hps</span></p>
-<p class="rvps6"><span class="rvts42">Click </span><span class="rvts20">Open</span></p>
+<p class="rvps6"><span class="rvts42"><br/></span></p>
 <p class="rvps23"><span class="rvts41">Step 3 – Set Model and Output Options</span></p>
 <p class="rvps6"><span class="rvts42">Go to the input table via the icon </span><img alt="" style="padding : 1px;" src="lib/Global%20Variable%20Table%20-%20View%20Mode.png"></p>
-<p class="rvps6"><span class="rvts42">Choose model 17-Ca Si Al/fe S Mg C Na K Cl in the </span><span class="rvts20">Cement System</span><span class="rvts42"> group of the </span><span class="rvts20">Cement Model</span><span class="rvts42"> tab</span></p>
+<p class="rvps6"><span class="rvts42">Choose model 17-Ca Si Al/Fe S Mg C Na K Cl in the </span><span class="rvts20">Cement System</span><span class="rvts42"> group of the </span><span class="rvts20">Cement Model</span><span class="rvts42"> tab</span></p>
 <p class="rvps6"><span class="rvts42">Go to the </span><span class="rvts20">Output</span><span class="rvts42"> Tab</span></p>
 <p class="rvps29"><span class="rvts71">For details on the different input records - </span><span class="rvts72">See </span><a class="rvts73" href="ModuleCement_Output_01_General.html">ModuleCement_Output_01_General</a></p>
-<p class="rvps6"><span class="rvts42">Type "</span><span class="rvts20">GBFS::Amount</span><span class="rvts42">" in </span><span class="rvts20">Cement::Figures::Lead$</span><span class="rvts42"> in the </span><span class="rvts20">Figures - General</span><span class="rvts42"> group</span></p>
+<p class="rvps6"><span class="rvts42">Select "</span><span class="rvts20">GBFS::Amount</span><span class="rvts42">" in </span><span class="rvts20">Cement::Figures::Lead$</span><span class="rvts42"> in the </span><span class="rvts20">Figures - General</span><span class="rvts42"> group</span></p>
 <p class="rvps29"><span class="rvts71">The record </span><span class="rvts74">GBFS::Amount</span><span class="rvts71"> defines the output variable used for the X-axis in the plots. This can be one of the (numerical) variables in the global input table. If </span><span class="rvts74">_null_</span><span class="rvts71">, integer values corresponding to the reaction step will be used.</span></p>
 <p class="rvps6"><span class="rvts42">Type "</span><span class="rvts20">GBFS [%]</span><span class="rvts42">" in </span><span class="rvts20">Cement::Figures::X::Title$</span></p>
 <p class="rvps29"><span class="rvts71">The record </span><span class="rvts74">Cement::Figures::X::Title$</span><span class="rvts71"> defines the label of the X-axis.</span></p>
 <p class="rvps6"><span class="rvts42">Run </span><img alt="" style="padding : 1px;" src="lib/Main%20-%20Menu%20-%20Run.png"></p>
 <p class="rvps23"><span class="rvts41">Step 4 – Check Log and Plots</span></p>
 <p class="rvps6"><span class="rvts42">Go to the Graph Workspace </span><img alt="" style="padding : 1px;" src="lib/Main%20-%20Menu%20-%20Graph.png"></p>
-<p class="rvps29"><a name="GraphType"></a><span class="rvts71">Available default plots are listed here. The </span><span class="rvts74">Graph Workspace</span><span class="rvts71"> allows for editing the plots - </span><span class="rvts72">See</span><span class="rvts71"> </span><a class="rvts73" href="https://dphjacques.github.io/HPx-Documentation/Graphworkspace.html" target="_blank">Graph Workspace</a><span class="rvts71"> in the </span><a class="rvts73" href="https://dphjacques.github.io/HPx-Documentation/Introduction.html" target="_blank">online HPx manual</a><span class="rvts71">. In this tutorial, we will illustrate how to make a stacked plot with volume fraction of the hydrates and of the major phases (hydrates, water, chemical shrinkage).</span></p>
+<p class="rvps29"><a name="GraphType"></a><span class="rvts71">The available default plots are listed here. The </span><span class="rvts74">Graph Workspace</span><span class="rvts71"> allows for editing the plots - </span><span class="rvts72">See</span><span class="rvts71"> </span><a class="rvts73" href="https://dphjacques.github.io/HPx-Documentation/Graphworkspace.html" target="_blank">Graph Workspace</a><span class="rvts71"> in the </span><a class="rvts73" href="https://dphjacques.github.io/HPx-Documentation/Introduction.html" target="_blank">online HPx manual</a><span class="rvts71">. In this tutorial, we will illustrate how to make a stacked plot with volume fraction of the hydrates and of the major phases (hydrates, water, chemical shrinkage).</span></p>
 <p class="rvps6"><span class="rvts42">Select </span><span class="rvts20">SolidsVolume</span><span class="rvts42"> in the list of figures.</span></p>
 <p class="rvps29"><span class="rvts71">A plot is generated</span></p>
 <p class="rvps6"><span class="rvts42">Right click &nbsp;</span><span class="rvts20">SolidsVolume</span><span class="rvts42"> and go to </span><span class="rvts20">Values Transformation</span><span class="rvts42"> -&gt; </span><span class="rvts20">Y</span><span class="rvts42"> -&gt; </span><span class="rvts20">Fraction %</span></p>
